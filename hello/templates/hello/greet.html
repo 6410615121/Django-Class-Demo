@@ -1,0 +1,9 @@
+{% extends 'hello/layout.html' %}
+{% block title %}Hello{% endblock %}
+{% block body %}
+    {% if hour > 0 %}
+    <h1>Hello, {{ name }}!!!</h1>
+    {% else %}
+    <h1>...</h1>
+    {% endif %}
+{% endblock %}
